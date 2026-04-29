@@ -54,4 +54,9 @@ public class CrudController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @GetMapping("/get-first-custom-query")
+    public ResponseEntity<Product> getFirst() {
+        return new ResponseEntity<>(productService.getFirst(), HttpStatus.OK);
+    }
+
 }

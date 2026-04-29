@@ -35,8 +35,12 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-    public void deleteAll(){
+    public void deleteAll() {
         productRepository.deleteAll();
+    }
+
+    public Product getFirst() {
+        return productRepository.getFirst();
     }
 
 }
